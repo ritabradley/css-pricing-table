@@ -1,0 +1,86 @@
+:root {
+  --primary-bg-gradient: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  --bg-color: #8ec5fc;
+  --blue: #51a5f8;
+  --description-color: #777;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  background-image: var(--primary-bg-gradient);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 96.8rem;
+  max-width: 100%;
+  padding: 1.5rem 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2.5rem;
+  padding: 2rem;
+  transition: all 0.5s;
+}
+.card:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+.card__icon {
+  width: 7.5rem;
+  margin: 2.5rem auto;
+}
+.card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--blue);
+  margin: 2.5rem auto;
+}
+.card__description {
+  color: var(--description-color);
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.card__pricing {
+  color: var(--blue);
+  font-size: 1.4rem;
+  margin: 2.5rem auto;
+}
+.card__price {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.card__price sup {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
